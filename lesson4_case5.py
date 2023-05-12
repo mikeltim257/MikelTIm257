@@ -14,6 +14,14 @@
 # [4] => 1 вышел, 4 остался последним т.е. выжившим - это наш ответ survivor.
 
 def josephus_task(num_people, kill_num):
+    """
+
+    :param num_people: Число людей в кругу
+    :param kill_num: Очередность вывода из круга
+    :return: (sur) Выбывший
+    :return: (n) Промежуточная переменная цикла
+    :return: (survivor) Последний выживший
+    """
     sur = 0
     for n in range(1, num_people + 1):
         sur = (sur + kill_num) % n

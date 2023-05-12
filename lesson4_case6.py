@@ -4,6 +4,13 @@
 # (1, 2, 3, 4, 5, 6, 7, 8, 9, 0)  => "(123) 456-7890"
 
 def create_phone_number(num_tuple):
+    """
+
+    :param num_tuple: Кортеж из 10 цифр
+    :return: (lst) Список полученный из кортежа путем цикла
+    :return: (n) Число списка
+    :return: (str_phone) Строка чисел в виде номера телефона
+    """
     lst = []
     for n in num_tuple:
         lst.append(str(n))

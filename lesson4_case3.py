@@ -7,6 +7,11 @@
 # 4 --> 4
 
 def sum_digits(num):
+    """
+
+    :param num: Положительное число
+    :return: (our_sum) Суммирует цифры положительного числа
+    """
     our_sum = 0
     while num > 0:
         our_sum += num % 10

@@ -8,6 +8,13 @@
 # 4 --> 0 (4 уже одна цифра, а значит мы проделали 0 итераций)
 
 def multiplication_chain(num):
+    """
+
+    :param num: Положительное число
+    :return: (elem) Элемент числа
+    :return: (sum_mult) Сумма произведений числа
+    :return: (count_multy) Счетчик итераций цикла
+    """
     count_multy = 0
     while num >= 10:
         sum_mult = 1

@@ -6,6 +6,11 @@
 
 
 def flatten_and_sort(array):
+    """
+
+    :param array: Двумерный массив
+    :return: (result_list) Сортировка по возрастанию суммы элементов списка
+    """
     result_list = sorted(sum(array, []))
     return result_list
 
