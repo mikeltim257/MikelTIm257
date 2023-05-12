@@ -15,7 +15,7 @@
 
 def josephus_task(num_people, kill_num):
     """
-
+    Отображает последний оставшийся элемент списка длинной num_people после выбывания каждого kill_num элемента списка
     :param num_people: Число людей в кругу
     :param kill_num: Очередность вывода из круга
     :return: (sur) Выбывший

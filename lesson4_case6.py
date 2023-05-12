@@ -5,7 +5,8 @@
 
 def create_phone_number(num_tuple):
     """
-
+    Принимает кортеж num_tuple из 10 цифр num_tuple,
+    и возвращает строку этих чисел в виде номера телефона str_phone.
     :param num_tuple: Кортеж из 10 цифр
     :return: (lst) Список полученный из кортежа путем цикла
     :return: (n) Число списка
