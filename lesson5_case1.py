@@ -13,7 +13,7 @@ def letter_stat(our_str):
     :param our_str: строка
     :return: (letters_dict) Список с функцией count
     """
-    letters_dict = {i: our_str.count(i) for i in our_str}
+    letters_dict = {j: our_str.count(j) for j in our_str}
     return letters_dict
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

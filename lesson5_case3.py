@@ -19,13 +19,20 @@
 
 
 def everything_for_your_cat(cats_data):
+    """
+    Функция принимает в себя список кортежей в формате Кличка_котика, Возраст, Имя_Покупателя, Фамилия_Покупателя
+    Возвращает отформатированную строку
+    Имя_покупателя Фамилия_покупателя: Кличка_котика1, Возраст; ...; Кличка_котикаN, Возраст\n
+    :param cats_data: кортеж
+    :return (new_str) отформатированная строка
+    """
 
-    our_str = {}
+    cats_dict = {}
+    our_str = ''
     for cat in cats_data:
-        temp = cat[0] + ', ' + str(cat[1])
-        our_str.setdefault(cat[2:], []).append(temp)
-    for k, v in our_str.items():
-        print(' '.join(k) + ':', '; '.join(v))
+        cats_dict.setdefault(' '.join(cat[2:]), []).append(', '.join(map(str, cat[:2])))
+    for k, v in cats_dict.items():
+        our_str += f'{k}: {"; ".join(v)}\n'
     return our_str
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

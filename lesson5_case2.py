@@ -7,7 +7,18 @@
 
 
 def repeats(our_str):
-    # Здесь нужно написать код
+    """
+     Функция выводит строку с данными о букве и ее количестве вхождений
+    в формате 'letter' --> l_1e_1t_1t_2e_2_r_1
+    :param our_str: исходная строка
+    :return: (new_str) отформатированная строка
+    """
+
+    letters_dict = dict.fromkeys(our_str, 0)
+    new_str = ''
+    for k in our_str:
+        letters_dict[k] += 1
+        new_str += k + f'_{letters_dict[k]}'
     return new_str
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
